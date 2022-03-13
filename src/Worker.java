@@ -10,7 +10,7 @@ public class Worker {
 
     public void start() {
         for (int i = 1; i <= 100; i++) {
-            if (i <= 67) {
+            if (i != 33) {
                 callback.onDone("Task " + i + " is done");
             } else {
                 errorCallBack.onError("Error: Task " + i + " is not done");
